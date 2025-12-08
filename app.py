@@ -227,7 +227,7 @@ if 'predictions' in st.session_state:
     pdf_file = generate_pdf_with_charts()
     with open(pdf_file, "rb") as f:
         st.download_button(
-            label="📄 Download PDF Report",
+            label="📄 Download Report",
             data=f,
             file_name=pdf_file,
             mime="application/pdf"
